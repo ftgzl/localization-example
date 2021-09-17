@@ -3,7 +3,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import {IntlProvider, FormattedMessage} from 'react-intl'
 
-const bicycleprice = 100
+const bicyclePrice = 100
 const dolarToTry = 8
 const messages = {
   "en-US": {
@@ -43,7 +43,7 @@ function App() {
       <br/>
       <p>
         <FormattedMessage values={{price : 
-          locale==="en-US" ? bicycleprice : bicycleprice * dolarToTry}}
+          locale==="en-US" ? bicyclePrice : bicyclePrice * dolarToTry}}
           id="price"
         />
       </p>
